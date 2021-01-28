@@ -83,7 +83,7 @@
 
            this.curentSlideIndex -= 1;
 
-        } else if (this.startTouchX - this.endTouchX < 10 && this.startTouchY - this.endTouchY < 10) {
+        } else if (Math.abs(this.startTouchX - this.endTouchX) < 10 && Math.abs(this.startTouchY - this.endTouchY) < 10) {
 
           this.isActivePopup = !this.isActivePopup;
 
